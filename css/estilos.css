@@ -4,11 +4,67 @@
 body{
     background-color:#FBE7C6;
     text-align: center;
-    padding: 0;
+    padding: 2%;
     margin: 0;
     box-sizing: border-box;
     background-image: url(/css/img/fondo.jpg);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.cat{
+    background-color: rgb(172, 94, 94);
+    height: 120px;
+    width: 50px;
+    position:absolute;
+    top: 6.3rem;
+    right: 17rem;
+    border-radius: 40px 40px 0 0;
+}
+.cat:before{
+    content:"";
+    position: absolute;
+    background-color: rgb(172, 94, 94);
+    height: 80px;
+    width: 40px;
+    border-radius: 0 80px 80px 0;
+    bottom: 0;
+    left: 43px;
+}
+.cat:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(172, 94, 94);
+    height: 80px;
+    width: 10px;
+    border-radius: 5px;
+    bottom: -70px;
+    left: 45px;
+    transform: rotate(-15deg);
+    transform-origin: top;
+    animation: tail 4s infinite;
+}
+@keyframes tail{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+.ear{
+    height: 0;
+    width: 0;
+    border-bottom: 40px solid rgb(172, 94, 94);
+    border-right: 33px solid transparent;
+    position: relative;
+    bottom: 12px;
+}
+.ear:before{
+    content:"";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 40px solid rgb(172, 94, 94);
+    border-left: 33px solid transparent;
+    bottom: -40px;
+    left: 17px;
+
 }
 h1{
     background-color: #ffaebbd7;
