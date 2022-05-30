@@ -21,29 +21,30 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="formulary">
         <section>
             <h2>Solicitud de adopción</h2>
-            <p>Si queres darle un nuevo hogar a algún gatito, vamos a pedirte que completes los siguientes datos. Te pedimos que llenes la solicitud solo si estás 100% seguro de querer adoptar y si tenés los medios económicos para cubrir las necesidades básicas que requiere un animal.</p>
+            <p class="formtext">Si queres darle un nuevo hogar a algún gatito, vamos a pedirte que completes los siguientes datos. Te pedimos que llenes la solicitud solo si estás 100% seguro de querer adoptar y si tenés los medios económicos para cubrir las necesidades básicas que requiere un animal.</p>
         </section>
         <form action="/formulario" method="post"> 
             <br>
-           <label for="name">Nombre</label>
-           <input type="text" id="name" name="name" placeholder="Nombre"><br>
+           <label for="name"></label>
+           <input class='controls' type="text" id="name" name="name" placeholder="ingrese su nombre"><br>
            
-           <label for="lastName"> Apellido</label>
-           <input type="text" id="lastName" name="lastName" placeholder="Apellido"><br>
+           <label for="lastName"> </label>
+           <input class='controls' type="text" id="lastName" name="lastName" placeholder="ingrese su Apellido"><br>
            
-           <label for="email"> Mail</label>
-           <input type="email" id="email" name="email" placeholder="Mail"><br>
+           <label for="email"></label>
+           <input class='controls' type="email" id="email" name="email" placeholder="Mail"><br>
            
-           <label for="telephone"> Celular</label>
-           <input type="text" id="telephone" name="telephone" placeholder="Numero"><br>
+           <label for="telephone"></label>
+           <input class='controls' type="text" id="telephone" name="telephone" placeholder="ingrese su numero de telefono"><br>
            
-           <label for="address"> Dirección</label>
-           <input type="text" id="address" name="address" placeholder="Calle, altura, localidad"><br>
+           <label for="address"></label>
+           <input class='controls' type="text" id="address" name="address" placeholder="Calle, altura, localidad">
+           <br>
            
-           <fieldset>
+           <fieldset class="tipodegatito">
                <legend>Quiero adoptar...</legend>
                <input type="radio" id="female" value="female" name="sex">
                <label for="female"> Hembra</label><br>               
@@ -53,8 +54,8 @@
                <label for="indistinct"> Indistinto</label><br>
             </fieldset>
             
-            <fieldset>
-                <legend> Que tenga...</legend>
+            <fieldset class="tipodegatito">
+                <legend > Que tenga...</legend>
                 <select name="age" id="age">
                     <option value="2months"> Dos meses</option>
                     <option value="3_to_6months"> Tres a seis meses</option>
@@ -63,7 +64,7 @@
                     <option value="any"> Cualquier edad</option>
                 </select><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="tipodegatito">
                 <legend> ¿Donde viviría el animal en cuestión?</legend>
                 <select name="type_of_hoyse" id="type_house">
                     <option value="house"> Casa</option>
