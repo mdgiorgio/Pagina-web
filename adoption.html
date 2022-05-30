@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Adopcion Gatitos</h1>
+        <div class="cat">
+            <div class="ear"> </div> 
+        </div>
+        <nav id="menu"> 
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/kittens.html">Gatitos</a></li>
+                <li><a href="/adoption.html">Adopción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Solicitud de adopción</h2>
+            <p>Si queres darle un nuevo hogar a algún gatito, vamos a pedirte que completes los siguientes datos. Te pedimos que llenes la solicitud solo si estás 100% seguro de querer adoptar y si tenés los medios económicos para cubrir las necesidades básicas que requiere un animal.</p>
+        </section>
+        <form action="/formulario" method="post"> 
+            <br>
+           <label for="name">Nombre</label>
+           <input type="text" id="name" name="name" placeholder="Nombre"><br>
+           
+           <label for="lastName"> Apellido</label>
+           <input type="text" id="lastName" name="lastName" placeholder="Apellido"><br>
+           
+           <label for="email"> Mail</label>
+           <input type="email" id="email" name="email" placeholder="Mail"><br>
+           
+           <label for="telephone"> Celular</label>
+           <input type="text" id="telephone" name="telephone" placeholder="Numero"><br>
+           
+           <label for="address"> Dirección</label>
+           <input type="text" id="address" name="address" placeholder="Calle, altura, localidad"><br>
+           
+           <fieldset>
+               <legend>Quiero adoptar...</legend>
+               <input type="radio" id="female" value="female" name="sex">
+               <label for="female"> Hembra</label><br>               
+               <input type="radio" id="male" value="male" name="sex">
+               <label for="male"> Macho</label><br>               
+               <input type="radio" id="indistinct" value="indistinct" name="sex">
+               <label for="indistinct"> Indistinto</label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Que tenga...</legend>
+                <select name="age" id="age">
+                    <option value="2months"> Dos meses</option>
+                    <option value="3_to_6months"> Tres a seis meses</option>
+                    <option value="7months_to_1year"> Siete meses a un año</option>
+                    <option value="+1year"> Un año o más</option>
+                    <option value="any"> Cualquier edad</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Donde viviría el animal en cuestión?</legend>
+                <select name="type_of_hoyse" id="type_house">
+                    <option value="house"> Casa</option>
+                    <option value="department"> Departamento</option>
+                    <option value="condo"> Ph</option>
+                    <option value="other"> Otro</option>
+                </select><br>
+            </fieldset>
+
+            <label for="question1">¿Adoptas vos o es para otra persona? </label>
+            <input type="text" id="question1" name="question1" placeholder="¿Quién adopta?"><br>
+            
+            <label for="question2">¿Habría otros animales en el lugar? </label>
+            <input type="text" id="question2" name="question2" placeholder="De ser asi, ¿de que tipo?"><br>
+            
+            <label for="question3">¿Estarían dispuestos a un seguimiento? </label>
+            <input type="text" id="question3" name="question3" placeholder="Sí o no"><br>
+            
+            <label for="question4">¿Qué harías en caso de no poder quedarte con el animal? </label>
+            <input type="text" id="question4" name="question4" placeholder="Comentanos"><br>
+            
+            <label for="comment">Comentario</label>
+            <textarea cols="50" rows="10" id="comment" name="comment" placeholder="En este espacio podes comentarnos lo que desees con respecto a la adopcion"></textarea>
+
+            <br><input type="button" onclick="alert('Tu solicitud de adopción fue enviada')" value="Enviar">
+             
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="mailto:micaela.daiana.giorgio@gmail.com, mailto:kanon.gr2006@gmail.com">Podes escribirnos por acá</a>
+        <a href="https://github.com/mdgiorgio">github mica</a>
+        <a href=https://github.com/byalfoster>github foster</a>
+        <p>&copy; Copyright Todos los derechos reservados</p>
+    </footer>
+    <script src="/script/adoption.js"></script>
+</body>
+</html>
