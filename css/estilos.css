@@ -1,7 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Fredoka+One&display=swap');
+
 
 body{
-    background-color:#FBE7C6;
     text-align: center;
     padding: 2%;
     margin: 0;
@@ -10,7 +12,7 @@ body{
 }
     
 .cat{
-    background-color: rgb(172, 94, 94);
+    background-color: #df5782;
     height: 120px;
     width: 50px;
     position:absolute;
@@ -21,7 +23,7 @@ body{
 .cat:before{
     content:"";
     position: absolute;
-    background-color: rgb(172, 94, 94);
+    background-color: #df5782;
     height: 80px;
     width: 40px;
     border-radius: 0 80px 80px 0;
@@ -31,7 +33,7 @@ body{
 .cat:after{
     content: "";
     position: absolute;
-    background-color: rgb(172, 94, 94);
+    background-color: #df5782;
     height: 80px;
     width: 10px;
     border-radius: 5px;
@@ -49,7 +51,7 @@ body{
 .ear{
     height: 0;
     width: 0;
-    border-bottom: 40px solid rgb(172, 94, 94);
+    border-bottom: 40px solid #df5782;
     border-right: 33px solid transparent;
     position: relative;
     bottom: 12px;
@@ -59,17 +61,18 @@ body{
     position: absolute;
     height: 0;
     width: 0;
-    border-bottom: 40px solid rgb(172, 94, 94);
+    border-bottom: 40px solid #df5782;
     border-left: 33px solid transparent;
     bottom: -40px;
     left: 17px;
 
 }
 h1{
-    background-color: #ffaebbd7;
+    background-color: #f0c3c7d3;
     color: white;
     font-size: 90px;
     width: 90%;
+    border: 1px solid black;
     max-width: 1000px;
     margin: auto;
     padding: 40px 0px;
@@ -77,7 +80,12 @@ h1{
     font-family: 'Fredoka One', cursive;
     text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+h2{
+    color: white;
+    text-shadow: -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 40px;
 
+}
 #menu ul{
     list-style: none;
     margin: 10;
@@ -86,12 +94,13 @@ h1{
 }
 #menu ul li{
     display: inline-block;
+    border: 1px solid black;
 }
 #menu ul li a{
     color: white;
     text-decoration: none;
     font-size:35px;
-    background-color: #a0e7e588;
+    background-color: #8cc7e4cc;
     display: block;
     padding: 13px;
     font-family: 'Fredoka One', cursive;
@@ -104,19 +113,97 @@ h1{
 
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #A0E7E5;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 50%;
+    background-color: #a0e7e5ad;
     text-decoration: none;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
+    width: 68%;
+    margin: auto;
+    padding: 40px 10px;
+    overflow: hidden;
+    border: 0.25px solid black;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+    text-decoration: none;
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    padding: 40px 10px;
+    padding: 40px 0px;
 
 }
+.box{
+    background-color: #f2cf5edc;
+    border-radius: 5px;
+    font-size: 150%;
+    border: 1px solid black;
+}
+.a{
+    grid-column: 1 / span 2;
+    border: 1px solid black;
+}
+.b{
+    grid-column: 1 / span 2;
+}
+.c {
+    grid-column: 3 ;
+    grid-row: 1 / span 2;
+}
+    
+    
 .gatitos{
-    border: 15px;
-    margin: 15px;
-    background-color: wheat;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: #f2cf5ec7;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+
+
+}
+img{
+    height: 25%;
+    border: 1px solid black;
+}
+.formtext{
+    text-align: center;
+    font-size: 20px;
+}
+.formulary{
+    background-color: #ebb063d1;
+    border: 1px solid black;
+    width: 90%;
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 2em;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka One', cursive;
+}
+.controls{
+    width: 50%;
+    background-color: #ffff9bf1;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka One', cursive;
+}
+.tipodegatito{
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid black;
+
 }
