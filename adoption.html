@@ -26,7 +26,7 @@
             <h2>Solicitud de adopción</h2>
             <p class="formtext">Si queres darle un nuevo hogar a algún gatito, vamos a pedirte que completes los siguientes datos. Te pedimos que llenes la solicitud solo si estás 100% seguro de querer adoptar y si tenés los medios económicos para cubrir las necesidades básicas que requiere un animal.</p>
         </section>
-        <form action="/formulario" method="post"> 
+        <form action="" method="POST"> 
             <br>
            <label for="name"></label>
            <input class='controls' type="text" id="name" name="name" placeholder="ingrese su nombre"><br>
@@ -44,16 +44,14 @@
            <input class='controls' type="text" id="address" name="address" placeholder="Calle, altura, localidad">
            <br>
            
-           <fieldset class="tipodegatito">
+           <fieldset class="tipodegatito" id="gender">
                <legend>Quiero adoptar...</legend>
-               <input type="radio" id="female" value="female" name="sex">
-               <label for="female"> Hembra</label><br>               
-               <input type="radio" id="male" value="male" name="sex">
-               <label for="male"> Macho</label><br>               
-               <input type="radio" id="indistinct" value="indistinct" name="sex">
-               <label for="indistinct"> Indistinto</label><br>
+               <select name="gender" id="gender">
+                   <option value="female">Hembra</option>
+                   <option value="male">Macho</option>
+                   <option value="indistinct">Indistinto</option>
+               </select><br>
             </fieldset>
-            
             <fieldset class="tipodegatito">
                 <legend > Que tenga...</legend>
                 <select name="age" id="age">
@@ -89,7 +87,7 @@
             <label for="comment">Comentario</label>
             <textarea class="inputcolor" cols="50" rows="10" id="comment" name="comment" placeholder="En este espacio podes comentarnos lo que desees con respecto a la adopcion"></textarea>
 
-            <br><input type="button" onclick="alert('Tu solicitud de adopción fue enviada')" value="Enviar">
+            <br><input type="submit" id="submit" onclick="alert('Tu solicitud de adopción fue enviada')" value="Enviar">
              
         </form>
     </main>
@@ -100,6 +98,6 @@
         <a href=https://github.com/byalfoster>github foster</a>
         <p>&copy; Copyright Todos los derechos reservados</p>
     </footer>
-    <script src="/script/adoption.js"></script>
+    <script src="./script/adoption.js"></script>
 </body>
 </html>
