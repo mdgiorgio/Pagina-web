@@ -37,14 +37,14 @@
            <label for="email"></label>
            <input class='controls' type="email" id="email" name="email" placeholder="Mail"><br>
            
-           <label for="telephone"></label>
-           <input class='controls' type="text" id="telephone" name="telephone" placeholder="ingrese su numero de telefono"><br>
+           <label for="phone"></label>
+           <input class='controls' type="text" id="phone" name="phone" placeholder="ingrese su numero de telefono"><br>
            
            <label for="address"></label>
            <input class='controls' type="text" id="address" name="address" placeholder="Calle, altura, localidad">
            <br>
            
-           <fieldset class="tipodegatito" id="gender">
+           <fieldset class="tipodegatito" >
                <legend>Quiero adoptar...</legend>
                <select name="gender" id="gender">
                    <option value="female">Hembra</option>
@@ -52,6 +52,7 @@
                    <option value="indistinct">Indistinto</option>
                </select><br>
             </fieldset>
+            
             <fieldset class="tipodegatito">
                 <legend > Que tenga...</legend>
                 <select name="age" id="age">
@@ -62,6 +63,7 @@
                     <option value="any"> Cualquier edad</option>
                 </select><br>
             </fieldset>
+           
             <fieldset class="tipodegatito">
                 <legend> ¿Donde viviría el animal en cuestión?</legend>
                 <select name="type_of_hoyse" id="type_house">
@@ -87,7 +89,7 @@
             <label for="comment">Comentario</label>
             <textarea class="inputcolor" cols="50" rows="10" id="comment" name="comment" placeholder="En este espacio podes comentarnos lo que desees con respecto a la adopcion"></textarea>
 
-            <br><input type="submit" id="submit" onclick="alert('Tu solicitud de adopción fue enviada')" value="Enviar">
+            <br><input type="submit" id="submit" value="Enviar">
              
         </form>
     </main>
