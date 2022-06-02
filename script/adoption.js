@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
 
         const oldData = JSON.parse(localStorage.getItem('data')) || [];
-        const newArray = [...oldData, adopterInfo];
+        const adoptionForm = [...oldData, adopterInfo];
 
 
         if (adopterInfo.name !== "" && adopterInfo.lastName !== "" &&  adopterInfo.email !== "" &&  adopterInfo.phone !== "" &&  adopterInfo.kittens !== "" &&  adopterInfo.age !== "") {
